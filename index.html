@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/estilos.css" />
+</head>
+<body>
+    <header>
+        <img class="logoAurora" src="./img/aurora.png" alt="Logo de Aurora Latam">
+    </header>
+    <div class="contenedorGeneral">
+        <div class="contenedorInsano">
+            <textarea class="textoUsuario" id="textoUsuario" placeholder="Escribe el mensaje"></textarea>
+            <div class="contenedorInformacion">
+                <img class="imagenAdvertencia" src="./img/informacion.png" alt="Icono de Informacion">
+                <p class="textoAdvertencia">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedorBotones">
+                <button class="botonEncriptar" id="botonEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button class="botonDesencriptar" id="botonDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedorSecciones">
+            <div class="sinResultado" id="sinResultado">
+                <img class="imagenBuscando" src="./img/personaBuscando.png" />
+                <p class="textoSinResultadoNegritas">Ningún mensaje fue encontrado</p>
+                <p class="textoSinResultado">
+                    Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+            <div class="conResultado" id="conResultado">
+                <textarea class="textoConResultado" id="textoResultado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, laudantium ipsam? Eveniet, excepturi dicta? Dolor unde, quia nulla, provident odio facere autem, molestiae ullam dolorum velit voluptatibus quam incidunt in.</textarea>
+                <button class="botonCopiar" id="botonCopiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>
